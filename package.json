@@ -1,0 +1,21 @@
+{
+    "name": "claim-nft",
+    "version": "1.0.0",
+    "description": "An API for Claiming NFT",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "sls offline start --environment local --apiKey localKey",
+        "createDynamoTable": "sls dynamodb migrate",
+        "dynamo:install": "sls dynamodb install --apiKey localKey"
+    },
+    "author": "erictenenbaum10",
+    "license": "ISC",
+    "devDependencies": {
+        "aws-lambda": "^1.0.6",
+        "aws-sdk": "^2.932.0",
+        "serverless-dotenv-plugin": "^3.9.0",
+        "serverless-dynamodb-local": "^0.2.39",
+        "serverless-offline": "^7.0.0"
+    }
+}
